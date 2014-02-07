@@ -6365,7 +6365,6 @@ Ember Debug
                         laterTimer = global.setTimeout(function() {
                             laterTimer = null;
                             laterTimerExpiresAt = null;
-                            debugger;
                             executeTimers(self);
                         }, wait);
                         laterTimerExpiresAt = executeAt;
