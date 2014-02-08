@@ -2,11 +2,11 @@
 
 libraries used
 
-  jquery
-  ember
-  ember-data
-  handlebars
-  localstorage_adapter
+    jquery
+    ember
+    ember-data
+    handlebars
+    localstorage_adapter
 
 creating application
 
@@ -35,6 +35,7 @@ create router
       });
     });
 
+
     // add the index route handler
     // eg: using todos as resource_name
     App.TodosRoute = Ember.Route.extend({
@@ -44,7 +45,6 @@ create router
     });
 
     // nested route under resource_name
-
     App.Router.map(function(){
       this.resource('resource_name', {
         path: '/'}
@@ -63,13 +63,13 @@ create router
 
 
     // add the route handler to sub_route
-
     App.TodosSubrouteRoute = Ember.Route.extend({
       model: function() {
         return this.store.filter('todo', function() {
           // condition
         });
       },
+
 
       renderTemplate: function(controller) {
         this.render('todos/index', {
@@ -91,21 +91,21 @@ controllers
         }
       },
 
+
       isFinished: function() {
         var todo = this.get('model');
         return todo.get('isDone');
       }.property('model.isDones'),
-
       isDone: false
-
     });
 
 model
-    // we can specify the data type of the fields
-    App.Todo = DS.Model.extend({
-        title: DS.attr('string'),
-        isCompleted: DS.attr('boolean')
-    });
+
+      // we can specify the data type of the fields
+      App.Todo = DS.Model.extend({
+          title: DS.attr('string'),
+          isCompleted: DS.attr('boolean')
+      });
 
 views
 
@@ -116,10 +116,9 @@ views
           this.$().focus();
       }
     });
-
     Ember.Handlebars.helper('edit-todo', Todos.EditTodoView);
 
-    here we created a new helper which can be used in handlebar template
+  here we created a new helper which can be used in handlebar template
 
     {{edit-todo class="edit" value=title focus-out="acceptChanges" insert-newline="acceptChanges"}}
 
