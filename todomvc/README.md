@@ -1,6 +1,6 @@
 ### Notes
 
-libraries used
+####libraries used
 
     jquery
     ember
@@ -8,11 +8,11 @@ libraries used
     handlebars
     localstorage_adapter
 
-creating application
+####creating application
 
     window.App = Ember.Application.create();
 
-specify storeage adapter
+####specify storeage adapter
 
   fixture adapter
 
@@ -26,7 +26,7 @@ specify storeage adapter
     });
 
 
-create router
+####create router
 
     // root route to application
     App.Router.map(function(){
@@ -78,7 +78,7 @@ create router
       }
     });
 
-controllers
+####controllers
 
   controller can have actions and properties
 
@@ -99,7 +99,7 @@ controllers
       isDone: false
     });
 
-model
+####model
 
       // we can specify the data type of the fields
       App.Todo = DS.Model.extend({
@@ -107,7 +107,7 @@ model
           isCompleted: DS.attr('boolean')
       });
 
-views
+####views
 
   views are helpers which need to be regusterd in handlebard to use
 
@@ -122,6 +122,6 @@ views
 
     {{edit-todo class="edit" value=title focus-out="acceptChanges" insert-newline="acceptChanges"}}
 
-Handle bar template
+####Handle bar template
 
     <script type="text/x-handlebars" data-template-name="todos">content goes here</script>
