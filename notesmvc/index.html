@@ -99,8 +99,87 @@
   </div>
 </script>
 
+<script type="text/x-handlebars" data-template-name="tasks">
+  <div class="tasks-container">
+    <section class="new-task">
+      <input type="text" class="text-input" placeholder="New Task">
+    </section>
+    <section class="list-tasks">
+      <div class="task-header footer-links">
+        <a href="#">All</a>
+        <a href="#">Remaining</a>
+        <a href="#">Finished</a>
+        <a href="#">Clear Finished</a>
+      </div>
+      <ul>
+        <li><input type="text" class="text-input" placeholder="New Task"></li>
+        <li>
+          <input type="checkbox">Task 1
+          <a href="#" class="close pull-right"><i class="fa fa-minus-circle"></i></a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</script>
+
 <script type="text/x-handlebars" data-template-name="bookmarks">
   <div class="bookmarks-container">
+    <section class="new-bookmark pull-right">
+      <form>
+        <div class="form-field">
+          <input type="text" class="text-input" placeholder="bookmark url">
+        </div>
+        <div class="form-field">
+          <input type="text" class="text-input" placeholder="tags">
+        </div>
+        <div class="form-field pull-right">
+          <button class="btn btn-form blue"><i class="fa fa-check"></i></button>
+        </div>
+      </form>
+    </section>
 
+    <section class="list-bookmarks">
+      <ol>
+        <li>
+          <a target="_blank" href="#" class="title">Lorem ipsum consectetuer adipiscing elit</a>
+          <span class="pull-right">
+            <a class="blue"><i class="fa fa-edit"></i></a>
+            <a class="close"><i class="fa fa-minus-circle"></i></a>
+          </span>
+          <p>http://example.com/bookmarked-page</p>
+          <p class="tags">
+            <label class="tag">tag1<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag2<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag3<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+          </p>
+        </li>
+        <li>
+          <a target="_blank" href="#" class="title">Lorem ipsum consectetuer adipiscing elit</a>
+          <span class="pull-right">
+            <a class="blue"><i class="fa fa-edit"></i></a>
+            <a class="close"><i class="fa fa-minus-circle"></i></a>
+          </span>
+          <p>http://example.com/bookmarked-page</p>
+          <p class="tags">
+            <label class="tag">tag1<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag2<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag3<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+          </p>
+        </li>
+        <li>
+          <a target="_blank" href="#" class="title">Lorem ipsum consectetuer adipiscing elit</a>
+          <span class="pull-right">
+            <a class="blue"><i class="fa fa-edit"></i></a>
+            <a class="close"><i class="fa fa-minus-circle"></i></a>
+          </span>
+          <p>http://example.com/bookmarked-page</p>
+          <p class="tags">
+            <label class="tag">tag1<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag2<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+            <label class="tag">tag3<a class="close"><i class="fa fa-minus-circle"></i></a></label>
+          </p>
+        </li>
+      </ol>
+    </section>
   </div>
 </script>
