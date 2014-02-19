@@ -441,7 +441,7 @@ a:hover {
     background-color: #fff;
 
     li {
-      background-color: #F2F3F1;
+      background-color: #3E3F3E;
       border-bottom: solid 1px #ccc;
       min-height: 52px;
 
@@ -457,7 +457,7 @@ a:hover {
 
       .label {
         font-size: 24px;
-        color: #666666;
+        color: #c2c2c2;
       }
 
       a {
@@ -474,10 +474,12 @@ a:hover {
 
   .footer {
     height: 21px;
-    background-color: #F2F3F1;
+    background-color: #3E3F3E;
     text-align: center;
     font-size: 12px;
 
-    a { color: #666666;}
+    a { position: relative;
+      top: 4px;
+      color: #c2c2c2;}
   }
 }
